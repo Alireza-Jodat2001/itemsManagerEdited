@@ -52,11 +52,32 @@
     flex: 1;
 
     &__title-box {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-right: 15px;
     }
 
     &__input {
+        border: none;
+        height: 30px;
+        font-size: 15px;
+        padding-right: 15px;
+
+        &::placeholder {
+            color: #9d9d9d;
+        }
+    }
+
+    &__btn-input {
+        height: 33px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     &__plus-icon {
+        width: 35px;
+        height: 35px;
     }
 }
