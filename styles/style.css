@@ -1,0 +1,258 @@
+@font-face {
+    font-family: dirooz;
+    src: url('Dirooz.8fb97e8c.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: dirooz;
+    list-style-type: none;
+}
+
+.main-container {
+    margin: 30px 0;
+}
+
+.select-box {
+    width: 20%;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.select-box__select {
+    appearance: none;
+    background: #cdcdcd;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 45px;
+    padding-right: 15px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.select-box__icon-dropdown {
+    pointer-events: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.txt-navigation {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main-box {
+    background: #e3e3e3;
+    border-radius: 15px 0 0 15px;
+    height: 500px;
+    display: flex;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+}
+
+.section--sub-title {
+    background: #c6cfe0;
+}
+
+.section--sub-title2 {
+    background: #9fb5dc;
+}
+
+.section--sub-title3 {
+    background: #8aa3cc;
+}
+
+.section--sub-title4 {
+    background: #6c8bc2;
+}
+
+.section__title-box {
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+    padding-right: 15px;
+    display: flex;
+}
+
+.section__input {
+    border: none;
+    height: 30px;
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.section__input::placeholder {
+    color: #9d9d9d;
+}
+
+.section__btn-input {
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 33px;
+}
+
+.section__plus-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.section__ul {
+    direction: ltr;
+    height: 74%;
+    margin-bottom: 15px;
+    overflow-y: auto;
+}
+
+.section__ul::-webkit-scrollbar {
+    width: 4px;
+}
+
+.section__ul::-webkit-scrollbar-track {
+    background: #3943879e;
+    border-radius: 5px;
+}
+
+.section__ul::-webkit-scrollbar-thumb {
+    background: #878787ac;
+    border-radius: 5px;
+}
+
+.section__li {
+    direction: rtl;
+    justify-items: start;
+    padding: 10px 20px 10px 0;
+    font-size: 16px;
+    display: grid;
+}
+
+.section__li--title-active {
+    background: #c6cfe0;
+}
+
+.section__li--subTitle-active {
+    background: #9fb5dc;
+}
+
+.section__li--subTitle-active2 {
+    background: #8aa3cc;
+}
+
+.section__li--subTitle-active3 {
+    background: #6c8bc2;
+}
+
+.section__li--subTitle-active4 {
+    background: #5673a8;
+}
+
+.section__btn-box {
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.section__btn-li {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.section__btn-li--showBtn {
+    background: #f4f5f7;
+}
+
+.section__btn-li--editBtn {
+    color: #fff;
+    background: #3365d1;
+}
+
+.section__btn-li--removeBtn {
+    background: none;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    display: flex;
+}
+
+.section__btn-li--createContent {
+    color: #fff;
+    background: #43ad4b;
+}
+
+.section__btn-li--hiddenBtn {
+    background: none;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    display: flex;
+}
+
+.section__trashIcon,
+.section__hiddenIcon {
+    width: 23px;
+}
+
+.minimize-btn {
+    background: none;
+    border: 1.5px solid;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.minimize-icon {
+    width: 23px;
+}
+
+.compressed-sec {
+    text-wrap: nowrap;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    display: flex;
+}
+
+.compressed-sec > span {
+    transform: rotate(-90deg);
+}
+
+.title-content {
+    width: 85%;
+}
+
+.show > .compressed-sec {
+    display: none;
+}
+
+.show > .title-content {
+    width: 100%;
+}
+
+.hidden > .compressed-sec {
+    width: 56px;
+    display: flex;
+}
+
+.hidden > .title-content {
+    display: none;
+}
+
+.hidden {
+    flex: unset;
+    width: 56px;
+}
