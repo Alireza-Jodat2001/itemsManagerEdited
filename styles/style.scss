@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'dirooz';
+    src: url('../fonts/Dirooz.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'dirooz';
+}
+
+.main-container {
+    margin: 30px 0;
+}
+
+.select-box {
+    position: relative;
+    width: fit-content;
+
+    &__select {
+        background: #cdcdcd;
+        appearance: none;
+        border: none;
+        border-radius: 10px 10px 0 0;
+        width: 200px;
+        height: 45px;
+        padding-right: 15px;
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    &__icon-dropdown {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.main-box {
+    height: 500px;
+    background: #e3e3e3;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+}
+
+.section {
+    flex: 1;
+
+    &__title-box {
+    }
+
+    &__input {
+    }
+
+    &__plus-icon {
+    }
+}
